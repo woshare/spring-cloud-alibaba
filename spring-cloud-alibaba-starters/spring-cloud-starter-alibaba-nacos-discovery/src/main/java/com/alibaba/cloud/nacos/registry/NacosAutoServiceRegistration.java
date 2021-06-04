@@ -34,7 +34,10 @@ import org.springframework.util.StringUtils;
  */
 public class NacosAutoServiceRegistration
 		extends AbstractAutoServiceRegistration<Registration> {
-
+	/**
+	 * 该类继承了AbstractAutoServiceRegistration类，
+	 * 而这个类，实现了ApplicationListener接口，并实现了其onApplicationEvent()方法，使得在服务启动之后，可以执行一些处理
+	 */
 	private static final Logger log = LoggerFactory
 			.getLogger(NacosAutoServiceRegistration.class);
 
